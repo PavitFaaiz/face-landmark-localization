@@ -15,12 +15,14 @@ The loss function used in training the mean of Euclidean distance between the gr
 <h3>Training</h3>
 Dataset is divided into 70% (2628 images) for training and 30% (1127 images) for testing. The ground truth points are first normalized by the width and height of the image before feeding to the network. For the results in the next section, the training parameters are as follows:
 
-  * Batch size -- 16
-  * Optimizer -- Adam
-  * Learning rate -- 0.001
-  * number of epochs -- 8
-  
-The pretrained weights can be found at: https://drive.google.com/file/d/1aEZX1TzmLlsHuN6vLe3neRxlp9_f6486/view?usp=sharing
+  * Batch size — 16
+  * Optimizer — Adam
+  * Learning rate — 0.001
+  * number of epochs — 8
+
+To train the model, download the dataset from https://github.com/StephenMilborrow/muct and move all the images from the five folders into the same folder named "images" in the project root. Also, move the "muct76-opencv.csv" file to the project folder as well. The image resizing can be done using resize_images() function in utils.py
+
+PS: The pretrained weights can be found at: https://drive.google.com/file/d/1aEZX1TzmLlsHuN6vLe3neRxlp9_f6486/view?usp=sharing
 
 <h2>Result</h2>
 The results by testing with this dataset could not be shown due to privacy agreement. Results on other dataset will be added later on.
